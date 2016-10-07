@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <style>
+  @import 'https://fonts.googleapis.com/css?family=Ruslan+Display';
+  </style>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-
+<h1> Cartoon Animation </h1>
+<p>My cartoon is a picture of a robot that I saw on a
+picture. This picture depicts a robot that is broken and isn't functional. I was inspired
+to make this because I thought it would be fun and cool to make. </p>
   </body>
 </html>
 <svg width="75%" viewBox="0 0 500 500">
-<rect x="50" y="200" width="500" height="500" fill="black"/>
+<rect x="50" y="200" width="500" height="500" fill="black">
+  <animate attributeName="fill" from="black" to="darkblue" begin="click" dur="5s" id="rect-animation"/>
 </rect>
 <circle cx="120" cy="300" r="50" fill="white">
 </circle>
 <circle cx="420" cy="300" r="50" fill="white">
 </circle>
-<rect x="190" y="400" width="150" height="50" fill="red"/>
-
+<rect x="190" y="400" width="150" height="50" fill="red" fill-opacity="0.33">
+<animate attributeName="x" from="190" to="220" begin="mouseover" dur="5s"/>
 </rect>
 <circle cx="120" cy="300" r="12" fill="black">
   <animate attributeName="cx" from="100" to="150" dur="5s" repeatCount="indefinite"/>
